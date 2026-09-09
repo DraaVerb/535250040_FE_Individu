@@ -1,59 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Profil Mahasiswa</title>
-
-    <!-- Menghubungkan file CSS eksternal -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header>
         <h1>Profil Mahasiswa</h1>
-        <p>Website Profil Pribadi Saya</p>
+        <p>Selamat datang di halaman profil mahasiswa saya</p>
     </header>
 
     <nav>
-        <a href="#profil">Profil</a>
-        <a href="#keahlian">Keahlian</a>
-        <a href="#kontak">Kontak</a>
+        <a href="#">Home</a>
+        <a href="#">Profil</a>
+        <a href="#">Kontak</a>
     </nav>
 
-    <article id="profil">
-        <h2>Halo, Saya Diandra Febry Wijaya</h2>
+    <article>
+        <div class="profile">
+            <div class="informasi">
+        <h2>Nama: Diandra Febry Wijaya</h2>
 
-        <h3>Program Studi: Teknik Informatika</h3>
+        <p><strong>Program Studi:</strong> Teknik Informatika</p>
 
         <p>
-            Saya adalah mahasiswa yang sedang mempelajari pemrograman
-            dan pengembangan website. Saya tertarik untuk mempelajari
-            teknologi baru dan mengembangkan kemampuan di bidang teknologi informasi.
+            Saya adalah mahasiswa yang tertarik pada bidang teknologi,
+            khususnya pengembangan website dan pemrograman. Saya senang
+            mempelajari hal-hal baru serta mengembangkan kemampuan di bidang IT.
         </p>
+        </div>
 
-        <section id="keahlian">
-            <h3>Keahlian dan Minat</h3>
+        <div class="keahlian">
+        <h3>Keahlian / Minat</h3>
+        <ul>
+            <li>Web Development</li>
+            <li>Berenang</li>
+            <li>Gaming</li>
+        </ul>
+        </div>
+        </div>
 
-            <ul>
-                <li>Web Development</li>
-                <li>UI/UX Design</li>
-                <li>Programming</li>
-            </ul>
-        </section>
-
-        <p>
-            <a class="link" href="https://github.com/DraaVerb" target="_blank">
-                Kunjungi GitHub Saya
+        <p class="github-link">
+            Kunjungi Github saya:
+            <a href="https://github.com/DraaVerb" target="_blank">
+                DraaVerb
             </a>
         </p>
     </article>
 
-    <footer id="kontak">
+    <footer>
         <p>&copy; 2026 Profil Mahasiswa</p>
     </footer>
 
 </body>
 </html>
+

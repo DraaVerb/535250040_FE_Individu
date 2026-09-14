@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /*flexbox*/ 
+    font-family: Arial, sans-serif;
+    background: #0e2954;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 950px;
+}
+
+.card { /*flexbox*/
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Foto */
+
+.foto {
+    width: 280px;
+    height: 280px;
+    flex-shrink: 0;
+}
+
+.foto img {
+    width: 90%;
+    height: 120%;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 7px solid #faffaf;
+}
+
+/* Isi */
+
+.isi {
+    flex: 1;
+}
+
+.judul {
+    color: #2a629a;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.isi h1 {
+    color: #0e2954;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.jurusan {
+    color: #2a629a;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.deskripsi {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+/* Informasi */
+
+.info { /*grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.box {
+    background: #f1f5f8;
+    border-left: 4px solid #2a629a;
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+.box span {
+    display: block;
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.box b {
+    color: #0e2954;
+}
+
+/* Button */
+
+button {
+    background: #0e2954;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 11px 20px;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2a629a;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) { /*Break point 1*/
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 30px;
+    }
+
+    .foto {
+        width: 210px;
+        height: 210px;
+    }
+
+    .info {
+        text-align: left;
+    }
+}
+
+
+/* =========================
+   HP
+========================= */
+
+@media (max-width: 480px) { /*Break point 2*/
+
+    body {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    .foto {
+        width: 160px;
+        height: 160px;
+    }
+
+    .isi h1 {
+        font-size: 29px;
+    }
+
+    .jurusan {
+        font-size: 17px;
+    }
+
+    .deskripsi {
+        font-size: 14px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+    }
+}
